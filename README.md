@@ -20,7 +20,7 @@ git clone https://github.com/zackurben/webpack-template.git my-project
 ## test
   `npm test`
   
-  Run the tests with jest.
+  Run the tests with _jest_.
 
 ## watch
   `npm run watch`
