@@ -3,17 +3,11 @@ const clean = require('clean-webpack-plugin');
 const html = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
   entry: './src/index.js',
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/'
-  },
-  devtool: 'inline-source-map',
-  devServer: {
-    contentBase: path.resolve(__dirname, 'dist'),
-    historyApiFallback: true
   },
   plugins: [
     new clean(['dist']),
