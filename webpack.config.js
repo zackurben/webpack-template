@@ -6,7 +6,7 @@ module.exports = {
   mode: 'development',
   entry: './src/index.js',
   output: {
-    filename: '[name].bundle.js',
+    filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/'
   },
@@ -30,7 +30,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['env']
+            presets: ['@babel/env']
           }
         }
       }
